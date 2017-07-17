@@ -110,7 +110,7 @@ header li{
     margin: 0;
     background-image: url(./img/girlsmiling.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0 -3000px;
     background-size: cover;
 }
 
@@ -147,20 +147,21 @@ header a:hover{
 }
 
 #profile{
-    width: 35%;
+    width: 25%;
     float: right;
-    margin: 10px 0 10px 20px;
+    margin: 20px 0 10px 40px;
     border: 4px solid darkorange
 }
 
 #prices{
     text-align: center;
-    width: 400px;
+    width: 30%;
     font-size:12px;
     color:rgb(0,61,77);
     font-family: "Lulo Clean", sans-serif;
     border: solid darkorange 4px;
     margin:auto;
+    padding: 5px 5px 5px 5px;
 }
 
 #schedule{
@@ -195,6 +196,17 @@ table a{
     color: black;
 }
 
+#review1{
+    display: block;
+    margin: 15px auto 15px auto;
+    width:90%;
+    border: 4px darkorange solid;
+}
+
+#written1{
+    display:none;
+}
+
 footer{
     min-height: 70px;
     background-color: rgb(0,61,77);
@@ -210,4 +222,69 @@ footer{
 footer #contact{
     font-family: sans-serif;
     font-size: 14px
+}
+
+@media(max-width:1030px){
+    .container{
+        text-align: left;
+    }
+
+    header #toplogo {
+        margin: 16px 15px 0 45px;
+        width: 30px;
+        float: left;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+    header #insurance{
+        display: none;
+    }
+
+    nav ul{
+        padding: 1px 0 1px 0;
+        margin: 0 0 0 0;
+    }
+
+    header li {
+        float: none;
+        display: block;
+        padding: 0 0 0 0;
+    }
+
+    #profile{
+        width: 35%;
+        margin: 5px 10px 5px 10px;
+    }
+
+    #prices{
+        font-size: 12px;
+        font-family: sans-serif;
+        color: black;
+        font-weight: normal;
+        width: 50%;
+
+    }
+
+    table, th {
+        color: black;
+        font-family: sans-serif;
+    }
+
+    #review1{
+        display: none;
+    }
+
+    #written1{
+        display: block;
+        border: 4px darkorange solid;
+        padding: 7px 7px 7px 7px;
+    }
+
+    nav{
+        text-align: center;
+        padding: 2px 0 4px 0;
+    }
 }
